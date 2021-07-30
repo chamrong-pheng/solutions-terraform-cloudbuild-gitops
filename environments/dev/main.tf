@@ -32,9 +32,10 @@ module "http_server" {
   project = "${var.project}"
   subnet  = "${module.vpc.subnet}"
 }
-
+#test change by adding dummy commend
 module "firewall" {
   source  = "../../modules/firewall"
   project = "${var.project}"
   subnet  = "${module.vpc.subnet}"
 }
+## adding dummy commend
