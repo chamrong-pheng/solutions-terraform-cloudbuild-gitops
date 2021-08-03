@@ -17,5 +17,6 @@ terraform {
   backend "gcs" {
     bucket = "test-optik-cdn-lab-130f21-tfstate"
     prefix = "env/dev"
+    location = "northamerica-northeast1-a"
   }
 }
