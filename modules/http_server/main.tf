@@ -22,8 +22,8 @@ resource "google_compute_address" "static" {
 
 resource "google_compute_instance" "http_server" {
   project      = "${var.project}"
-  #zone         = "northamerica-northeast1-a"
-  subnet_region = "northamerica-northeast1"
+  zone         = "northamerica-northeast1"
+  #subnet_region = "northamerica-northeast1"
   name         = "${local.network}-apache2-instance"
   machine_type = "f1-micro"
 
